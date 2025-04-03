@@ -1,0 +1,94 @@
+.header-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilo para el título del header */
+  .header-container h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Estilo para el menú horizontal */
+  .horizontal-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centrando el contenido del menú */
+  }
+  
+  /* Estilo para los ítems del menú */
+  .horizontal-menu-item {
+    margin: 0 15px; /* Espacio entre los ítems */
+  }
+  
+  .horizontal-menu-item a {
+    color: #f0f0f0;
+  
+    text-decoration: none;
+    position: relative; 
+    transition: color 0.3s ease; 
+  }
+  
+  .horizontal-menu-item a:hover {
+    color: #00c6ff; 
+  }
+  
+  
+  .horizontal-menu-item a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #00c6ff;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .horizontal-menu-item a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+   
+    background-color: black;
+    color: white;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .horizontal-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .horizontal-menu-item {
+        margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .horizontal-menu-item a {
+        font-size: medium;
+        font-size: 1em;
+    }
+  }
