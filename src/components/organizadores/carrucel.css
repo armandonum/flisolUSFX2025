@@ -43,7 +43,11 @@
 }
 
 
-
+#drag, #spin, .card, .card * {
+  user-select: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+}
 
 
   
