@@ -2,6 +2,8 @@ import { useRef, useEffect } from "react";
 import "./carrucel.css";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import personas from "../../data/personas";
+import tuxImage from "../../assets/tux.png"; 
+
 
 const Organizadores = () => {
   const dragRef = useRef<HTMLDivElement>(null);
@@ -147,11 +149,11 @@ const Organizadores = () => {
       <div id="drag" ref={dragRef}>
         <div id="spin" ref={spinRef}>
           <div>
-            <img src="src/assets/tux.png" alt="" />
+            <img src={tuxImage} alt="" />
           </div>
           {personas.map((persona, index) => (
             <div className="card" key={index}>
-              <img src={`src/assets/${persona.imagen}`} alt={persona.nombre} />
+              <img src={`../../public/assets/${persona.imagen}`} alt={persona.nombre} />
               <div className="card-buttons">
                 {persona.nombre}
                 <div className="social-icons">
