@@ -3,9 +3,45 @@ import "./carrucel.css";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import personas from "../../data/personas";
 import tuxImage from "../../assets/tux.png"; 
+import Sebastian from "../../assets/Sebastian.png";
+import Rocisela from "../../assets/Rocisela.png";
+import Armando from "../../assets/Armando.png";
 
 
 const Organizadores = () => {
+
+
+const personas = [
+  {
+    nombre: "Juan Sebastian Delgadillo",
+    imagen: Sebastian,
+    redes: {
+      facebook: "https://www.facebook.com/share/15NnZ3jMJ5/",
+      github: "https://github.com/sebastianDLL",
+      instagram: "https://www.instagram.com/sebastian_d_ll?igsh=MWc5eWNnZGh3bHlwdQ==",
+      linkedin: "https://www.linkedin.com/in/delgadillo-llanos-juan-sebastian?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  },
+  {
+    nombre: "Rosicela Pinedo",
+    imagen: Rocisela,
+    redes: {
+      facebook: "https://www.facebook.com/share/1JovyHKpJC/"
+    }
+  },
+  {
+    nombre: "Armando Nuñez",
+    imagen: Armando,
+    redes: {
+      facebook: "https://www.facebook.com/profile.php?id=100072802530579",
+      github: "https://github.com/armandonum",
+      linkedin: "https://www.linkedin.com/in/armando-nu%C3%B1ez-condori-727487290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  }
+];
+
+
+
   const dragRef = useRef<HTMLDivElement>(null);
   const spinRef = useRef<HTMLDivElement>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
