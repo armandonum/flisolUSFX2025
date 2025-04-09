@@ -165,6 +165,9 @@
 
 
 @media (max-width: 768px) {
+  .carruel {
+    height: 60vh;
+  }
   .card {
     width: 70%;
     height: 80%;
