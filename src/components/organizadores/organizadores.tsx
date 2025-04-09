@@ -153,7 +153,7 @@ const Organizadores = () => {
           </div>
           {personas.map((persona, index) => (
             <div className="card" key={index}>
-              <img src={`../../public/assets/${persona.imagen}`} alt={persona.nombre} />
+              <img src={`${persona.imagen}`} alt={persona.nombre} />
               <div className="card-buttons">
                 {persona.nombre}
                 <div className="social-icons">
