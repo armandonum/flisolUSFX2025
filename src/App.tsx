@@ -1,4 +1,5 @@
 import PrincipalFlisol from './components/principal/principalFlisol'
+import SobreEvento from './components/principal/sobreEvento'
 import Expositores from './components/expositores/expositores'
 import Organizadoresq from './components/organizadores/organizadores'
 import Colaboradores from './components/colaboradores/colaboradores'
@@ -11,6 +12,7 @@ function App() {
      
         <>
           <PrincipalFlisol />
+          <SobreEvento />
           < Expositores />
           <Organizadoresq />
           <Colaboradores />
