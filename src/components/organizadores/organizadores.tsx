@@ -1,4 +1,3 @@
-import { Container, Row, Col } from "react-bootstrap";
 import { useRef, useEffect } from "react";
 import "./carrucel.css";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
