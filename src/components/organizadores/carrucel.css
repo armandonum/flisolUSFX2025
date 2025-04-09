@@ -1,0 +1,160 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+   
+}
+
+
+
+
+.carruel
+{ 
+  
+   height: 75dvb;
+  border-radius: 50px;
+   overflow: hidden;
+   display: flex;
+   background: #070716;
+   perspective: 1000px;
+   transform-style: preserve-3d;
+}
+
+
+
+.card {
+  position: absolute;
+
+  width: 70%;
+  height: 80%;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: center; 
+  box-shadow: 0 0 8px #fff;
+  background-color: #0e0d0d;
+  border-radius: 12px;
+  order: 100px solid #fff;
+  overflow: hidden;
+ 
+  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+
+
+
+
+  
+.card-buttons {
+  position: absolute;
+  bottom: 0; 
+  width: 100%;
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  z-index: 5; 
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #1da1f2;
+}
+
+.icon span {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+ 
+  
+  .icon:hover {
+    transform: scale(1.2);
+    color: #1da1f2;
+  }
+  
+  
+
+  
+ 
+
+
+#drag, #spin
+{
+  
+    position: relative;
+    display: flex;
+    margin:auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+}
+#drag img 
+{
+   transform-style: preserve-3d;
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    text-align: center  ;
+    -webkit-box-reflect: below 10px linear-gradient(transparent,#0007);
+
+}
+
+#drag img:hover
+{
+
+-webkit-box-reflect: below 10px linear-gradient(transparent,#0007);
+}
+
+
+
+#ground 
+{
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+}
+
+@keyframes spin  {
+
+    from {
+        transform: rotateY(0deg);
+    }
+    to { 
+        transform: rotateY(360deg);
+    }
+    
+}
+
+@keyframes  spinRevert {
+    from {
+        transform: rotateY(360deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+    
+}
