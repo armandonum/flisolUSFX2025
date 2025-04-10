@@ -4,8 +4,20 @@
     max-width: 95%;
     margin: 0 auto;
     border-radius: 3.125rem;
-    color: white;
     overflow: hidden;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Tema oscuro (predeterminado) */
+.dark-theme {
+    color: white;
+    background-color: transparent;
+}
+
+/* Tema claro */
+.light-theme {
+    color: #0A1C42;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .evento-header {
@@ -25,7 +37,7 @@
 .line-right {
     flex: 1;
     height: 2px;
-    background-color: white;
+    background-color: currentColor;
     border: none;
 }
 
