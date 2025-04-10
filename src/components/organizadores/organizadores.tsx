@@ -71,6 +71,10 @@ const Organizadores = () => {
     let startX: number, startY: number;
 
     const handlePointerDown = (e: PointerEvent | TouchEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.tagName === "A" || target.closest("a")) {
+        return;
+      }
       if (e instanceof TouchEvent) {
         startX = e.touches[0].clientX;
         startY = e.touches[0].clientY;
