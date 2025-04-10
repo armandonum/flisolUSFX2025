@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import "./carrucel.css";
-import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram, FaExternalLinkSquareAlt, FaLink } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import tuxImage from "../../assets/tux.png"; 
 import Rocisela from "../../assets/Rocisela.png"; 
 import Armando from "../../assets/Armando.png"; 
