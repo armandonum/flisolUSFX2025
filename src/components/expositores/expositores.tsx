@@ -1,82 +1,103 @@
-import { Container, Row, Col } from "react-bootstrap";
+// src/components/expositores/Expositores.tsx
+import React from "react";
+import ExpositorCard from "./expositorCard";
 
-const Expositores = () => {
+const Expositores: React.FC = () => {
+  const expositores = [
+    {
+      horaInicio: "8:15",
+      horaFin: "8:45",
+      nombre: "Andrea Cornejo",
+      descripcion: "........",
+      imagen: "/src/assets/Armand.png", 
+      redes: {
+        facebook: "#",
+        instagram: "#",
+        linkedin: "#",
+        github: "#",
+      },
+    },
+    {
+      horaInicio: "8:55",
+      horaFin: "9:25",
+      nombre: "Ing. Roger David Barja Montellano",
+      descripcion: "......................",
+      imagen: "/src/assets/Armand.png", 
+      redes: {
+        facebook: "#",
+        instagram: "#",
+        linkedin: "#",
+        github: "#",
+      },
+    },
+    {
+      horaInicio: " 9:35",
+      horaFin: "10:05",
+      nombre: "Adriana campos",
+      descripcion: "................",
+      imagen: "/src/assets/Armand.png", 
+      redes: {
+        facebook: "#",
+        instagram: "#",
+        linkedin: "#",
+        github: "#",
+      },
+    },
+    {
+      horaInicio: "10:15",
+      horaFin: "10:45",
+      nombre: "Ing. Juan Carlos Porcel",
+      descripcion: "................",
+      imagen: "/src/assets/Armand.png", 
+      redes: {
+        facebook: "#",
+        instagram: "#",
+        linkedin: "#",
+        github: "#",
+      },
+    },
+    {
+      horaInicio:"11:15",
+      horaFin: "11:45",
+      nombre: "Ing. bergman",
+      descripcion: "montar servidor git lab en un SO linux",
+      imagen: "/src/assets/Armand.png", 
+      redes: {
+        facebook: "#",
+        instagram: "#",
+        linkedin: "#",
+        github: "#",
+      },
+    },
+    {
+      horaInicio:"11:55",
+      horaFin: "12:25",
+      nombre: "Ing. Ariel Gusman Gonzales",
+      descripcion: "Técnicas Avanzadas de Pentesting en un Dominio Corporativo.",
+      imagen: "/src/assets/Armand.png", 
+      redes: {
+        facebook: "#",
+        instagram: "#",
+        linkedin: "#",
+        github: "#",
+      },
+    },
+
+    // Puedes duplicar este objeto para más expositores
+  ];
+
   return (
-    <Container fluid className="px-0">
-      <Row className="justify-content-center">
-        <Col xs={12} md={10} lg={8} className="text-center">
-          <svg
-            viewBox="0 0 300 100"
-            preserveAspectRatio="xMidYMid meet"
-            style={{
-              width: '30%',
-              height: 'auto',
-              display: 'block',
-              margin: '0 auto'
-            }}
-          >
-            <defs>
-              <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#251941" />
-                <stop offset="100%" stopColor="#BF2792" />
-              </linearGradient>
-              <filter id="leafShadow" x="-20%" y="-20%" width="140%" height="140%">
-                <feDropShadow
-                  dx="2"
-                  dy="2"
-                  stdDeviation="1"
-                  floodColor="#2E7D32"
-                  floodOpacity="0.5"
-                />
-              </filter>
-            </defs>
-
-            <path
-              d="M30,50 C15,40 5,20 10,10 C20,5 25,30 30,50 C35,30 40,5 50,10 C55,20 45,40 30,50 Z"
-              fill="url(#leafGradient)"
-              stroke="#1B5E20"
-              strokeWidth="0.8"
-              filter="url(#leafShadow)"
-              fillOpacity="0.9"
-            />
-            <path
-              d="M20,15 L30,25 M25,10 L35,20 M15,25 L25,35 M25,40 L35,50"
-              stroke="#1B5E20"
-              strokeWidth="0.3"
-              strokeLinecap="round"
-            />
-            <text
-              x="150"
-              y="55"
-              fontFamily="'Arial', sans-serif"
-              fontSize="14"
-              fontWeight="bold"
-              textAnchor="middle"
-              fill="#FFFFFF"
-              strokeWidth="0.5"
-              letterSpacing="1px"
-            >
-              Expositores
-            </text>
-            <path
-              d="M270,50 C285,40 295,20 290,10 C280,5 275,30 270,50 C265,30 260,5 250,10 C245,20 255,40 270,50 Z"
-              fill="url(#leafGradient)"
-              stroke="#1B5E20"
-              strokeWidth="0.8"
-              filter="url(#leafShadow)"
-              fillOpacity="0.9"
-            />
-            <path
-              d="M280,15 L270,25 M275,10 L265,20 M285,25 L275,35 M275,40 L265,50"
-              stroke="#1B5E20"
-              strokeWidth="0.3"
-              strokeLinecap="round"
-            />
-          </svg>
-        </Col>
-      </Row>
-    </Container>
+    <section className="bg-black py-10 min-h-screen">
+      <h2 className="text-3xl text-white text-center font-bold mb-10">Expositores</h2>
+      <div className="flex flex-col items-center gap-8">
+        {expositores.map((expositor, idx) => (
+          <ExpositorCard key={idx} {...expositor} />
+        ))}
+      </div>
+    </section>
   );
 };
 
 export default Expositores;
+
+
