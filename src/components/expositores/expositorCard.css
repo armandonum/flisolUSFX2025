@@ -1,0 +1,49 @@
+.card-expositor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  border: 2px solid #800080;
+  border-radius: 24px;
+  padding: 24px;
+  color: white;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px #80008050;
+}
+
+.card-expositor .info {
+  flex: 1;
+}
+
+.card-expositor .hora {
+  font-size: 14px;
+}
+
+.card-expositor .nombre {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.card-expositor .descripcion {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card-expositor .redes {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+  font-size: 20px;
+  
+
+}
+
+.card-expositor .imagen img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #800080;
+}
