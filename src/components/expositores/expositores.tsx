@@ -5,21 +5,21 @@ import ExpositorCard from "./expositorCard";
 const Expositores: React.FC = () => {
   const expositores = [
     {
-      horaInicio: "8:15",
-      horaFin: "8:45",
-      nombre: "Andrea Cornejo",
-      descripcion: "........",
+      horaInicio: "14:30   ",
+      horaFin: " 15:00",
+      nombre: "Ing. Andrea Cornejo",
+      descripcion: "¿Sigues usando Windows? Hablemos de Linux...",
       imagen: "/src/assets/Armand.png", 
       redes: {
-        facebook: "#",
-        instagram: "#",
-        linkedin: "#",
-        github: "#",
+        
+        instagram: "https://www.instagram.com/andreacoding/",
+        linkedin: "https://www.linkedin.com/in/andrea-cornejo-m/",
+      
       },
     },
     {
-      horaInicio: "8:55",
-      horaFin: "9:25",
+      horaInicio: "..",
+      horaFin: "000",
       nombre: "Ing. Roger David Barja Montellano",
       descripcion: "......................",
       imagen: "/src/assets/Armand.png", 
@@ -31,9 +31,9 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio: " 9:35",
-      horaFin: "10:05",
-      nombre: "Adriana Calvo",
+      horaInicio: " ...",
+      horaFin: "..",
+      nombre: "Ing. Adriana Calvo",
       descripcion: "................",
       imagen: "/src/assets/Armand.png", 
       redes: {
@@ -44,8 +44,8 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio: "10:15",
-      horaFin: "10:45",
+      horaInicio: "...",
+      horaFin: "...",
       nombre: "Ing. Juan Carlos Porcel",
       descripcion: "................",
       imagen: "/src/assets/Armand.png", 
@@ -56,22 +56,10 @@ const Expositores: React.FC = () => {
         github: "#",
       },
     },
+
     {
-      horaInicio:"11:15",
-      horaFin: "11:45",
-      nombre: "Ing. bergman",
-      descripcion: "montar servidor git lab en un SO linux",
-      imagen: "/src/assets/Armand.png", 
-      redes: {
-        facebook: "#",
-        instagram: "#",
-        linkedin: "#",
-        github: "#",
-      },
-    },
-    {
-      horaInicio:"11:55",
-      horaFin: "12:25",
+      horaInicio:"...",
+      horaFin: "...",
       nombre: "Ing. Ariel Gusman Gonzales",
       descripcion: "Técnicas Avanzadas de Pentesting en un Dominio Corporativo.",
       imagen: "/src/assets/Armand.png", 
