@@ -33,7 +33,7 @@ const Expositores: React.FC = () => {
     {
       horaInicio: " 9:35",
       horaFin: "10:05",
-      nombre: "Adriana campos",
+      nombre: "Adriana Calvo",
       descripcion: "................",
       imagen: "/src/assets/Armand.png", 
       redes: {

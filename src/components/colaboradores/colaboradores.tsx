@@ -10,7 +10,7 @@ const colaboradores = () => {
     <div className="colaboradores-container">
     <Colaborador nombre={"Centro de Estudiantes Chat GPT"} foto={centro}/>
     <Colaborador nombre={"Facultad de Ciencias y Tecnologia"} foto={fcyT}/>
-    <Colaborador nombre={"IT-group Sucre"} foto={itgroup}/>
+
     </div>
     </>
   );
