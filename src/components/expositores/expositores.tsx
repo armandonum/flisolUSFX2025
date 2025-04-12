@@ -61,7 +61,7 @@ const Expositores: React.FC = () => {
       horaInicio:"...",
       horaFin: "...",
       nombre: "Ing. Ariel Gusman Gonzales",
-      descripcion: "Técnicas Avanzadas de Pentesting en un Dominio Corporativo.",
+      descripcion: "Flipper Zero: Hacking Ético con un Dispositivo Open Source",
       imagen: "/src/assets/Armand.png", 
       redes: {
         facebook: "#",
