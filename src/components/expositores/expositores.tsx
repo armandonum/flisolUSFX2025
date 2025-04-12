@@ -1,6 +1,8 @@
 // src/components/expositores/Expositores.tsx
 import React from "react";
 import ExpositorCard from "./expositorCard";
+import user from "../../assets/user.png";
+import refrigerio from "../../assets/refrigerio.png";
 
 const Expositores: React.FC = () => {
   const expositores = [
@@ -9,7 +11,7 @@ const Expositores: React.FC = () => {
       horaFin: " 15:00",
       nombre: "Ing. Andrea Cornejo",
       descripcion: "¿Sigues usando Windows? Hablemos de Linux...",
-      imagen: "/src/assets/Armand.png", 
+      imagen: user, 
       redes: {
         
         instagram: "https://www.instagram.com/andreacoding/",
@@ -22,7 +24,7 @@ const Expositores: React.FC = () => {
       horaFin: "15:40",
       nombre: "Ing. Roger David Barja Montellano",
       descripcion: "......................",
-      imagen: "/src/assets/Armand.png", 
+      imagen: user, 
       redes: {
         facebook: "#",
         instagram: "#",
@@ -35,7 +37,7 @@ const Expositores: React.FC = () => {
       horaFin: "16:20",
       nombre: "Ing. Juan Carlos Porcel",
       descripcion: "................",
-      imagen: "/src/assets/Armand.png", 
+      imagen: user, 
       redes: {
         facebook: "#",
         instagram: "#",
@@ -48,7 +50,7 @@ const Expositores: React.FC = () => {
       horaFin: "17:00",
       nombre: "refrigerio ",
       descripcion: "un sandwich de mortadela + soda",
-      imagen: "/src/assets/Armand.png", 
+      imagen: refrigerio, 
       redes: {
         facebook: "",
         instagram: "",
@@ -61,7 +63,7 @@ const Expositores: React.FC = () => {
       horaFin: "17:40",
       nombre: "Ing. Adriana Calvo",
       descripcion: "................",
-      imagen: "/src/assets/Armand.png", 
+      imagen: user, 
       redes: {
         facebook: "#",
         instagram: "#",
@@ -76,7 +78,7 @@ const Expositores: React.FC = () => {
       horaFin: "17: 40",
       nombre: "Ing. Ariel Gusman Gonzales",
       descripcion: "Flipper Zero: Hacking Ético con un Dispositivo Open Source",
-      imagen: "/src/assets/Armand.png", 
+      imagen: user, 
       redes: {
         facebook: "#",
         instagram: "#",
