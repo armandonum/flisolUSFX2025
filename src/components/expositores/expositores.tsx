@@ -58,8 +58,8 @@ const Expositores: React.FC = () => {
     },
 
     {
-      horaInicio:"...",
-      horaFin: "...",
+      horaInicio:"17:50 ",
+      horaFin: "17: 40",
       nombre: "Ing. Ariel Gusman Gonzales",
       descripcion: "Flipper Zero: Hacking Ético con un Dispositivo Open Source",
       imagen: "/src/assets/Armand.png", 
