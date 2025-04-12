@@ -12,8 +12,6 @@ const colaboradores = () => {
     <Colaborador nombre={"Facultad de Ciencias y Tecnologia"} foto={fcyT}/>
     <Colaborador nombre={"IT-group Sucre"} foto={itgroup}/>
     </div>
-    
-
     </>
   );
 };

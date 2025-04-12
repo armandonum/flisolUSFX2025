@@ -76,7 +76,23 @@
     40% {
       transform: translateY(-30px) rotate(45deg);
     }
-    60% {
-      transform: translateY(-15px) rotate(45deg);
+      60% {
+        transform: translateY(-15px) rotate(45deg);
+      }
     }
+  
+    @media screen and (max-width: 768px) {
+    
+      .principal-container {
+        height: 60vh;
+        padding: 1rem;
+      }
+      .main-logo {
+        max-width: 20rem;
+      }
+      
+
+    
+      
+    
   }

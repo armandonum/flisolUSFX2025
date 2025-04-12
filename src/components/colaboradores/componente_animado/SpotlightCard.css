@@ -8,6 +8,7 @@
     --mouse-x: 50%;
     --mouse-y: 50%;
     --spotlight-color: rgba(255, 255, 255, 0.05);
+    padding-bottom: 50px;
   }
   
   .card-spotlight::before {
