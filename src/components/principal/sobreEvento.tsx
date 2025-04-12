@@ -34,7 +34,10 @@ const SobreEvento = () => {
           ¡Te invitamos a ser parte de esta experiencia única de aprendizaje y comunidad!
         </p>
         
-        <button className="register-button">
+        <button
+          className="register-button"
+          onClick={() => window.open('https://docs.google.com/forms/d/1lVAyWQFTcHnChPHs6WQORf0pa_ORjdkhmdZ8PsSVFpg/viewform?edit_requested=true', '_blank')}
+        >
           registra tu asistencia
         </button>
       </div>
