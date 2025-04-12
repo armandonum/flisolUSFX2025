@@ -47,7 +47,7 @@ const Expositores: React.FC = () => {
       horaInicio: "16:30",
       horaFin: "17:00",
       nombre: "refrigerio ",
-      descripcion: "un sandwich de mosrtadel + soda",
+      descripcion: "un sandwich de mortadela + soda",
       imagen: "/src/assets/Armand.png", 
       redes: {
         facebook: "",
