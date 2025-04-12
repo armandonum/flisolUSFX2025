@@ -1,13 +1,30 @@
 .colaboradores-container {
   display: flex;
-  flex-direction: wrap;
-  justify-content: center;
+  flex-wrap: wrap;
+justify-content: center;
   margin: 0 auto;
   gap: 20px;
 }
 
 .colaborador-card {
  display: flex;
-flex-direction: row;
- width: 300px;
+justify-content: row;
+
+
+width: 300px; 
+
+}
+
+.colaborador-card img {
+  width: 90%;
+  height: 90%;
+
+}
+
+
+@media (max-width: 768px) {
+  .colaborador-card {
+    width: 150px;
+    font-size: 0.7rem;
+  }
 }

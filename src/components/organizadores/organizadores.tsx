@@ -160,6 +160,9 @@ const Organizadores = () => {
   }, []);
 
   return (
+    <>
+    <h2>Organizadores</h2>
+
     <div className="carruel">
       <div id="drag" ref={dragRef}>
         <div id="spin" ref={spinRef}>
@@ -316,6 +319,7 @@ const Organizadores = () => {
         <div id="ground"></div>
       </div>
     </div>
+    </>
   );
 };
 
