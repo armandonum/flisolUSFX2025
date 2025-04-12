@@ -18,8 +18,8 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio: "..",
-      horaFin: "000",
+      horaInicio: "15:10",
+      horaFin: "15:40",
       nombre: "Ing. Roger David Barja Montellano",
       descripcion: "......................",
       imagen: "/src/assets/Armand.png", 
@@ -31,21 +31,8 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio: " ...",
-      horaFin: "..",
-      nombre: "Ing. Adriana Calvo",
-      descripcion: "................",
-      imagen: "/src/assets/Armand.png", 
-      redes: {
-        facebook: "#",
-        instagram: "#",
-        linkedin: "#",
-        github: "#",
-      },
-    },
-    {
-      horaInicio: "...",
-      horaFin: "...",
+      horaInicio: "15:50",
+      horaFin: "16:20",
       nombre: "Ing. Juan Carlos Porcel",
       descripcion: "................",
       imagen: "/src/assets/Armand.png", 
@@ -56,6 +43,33 @@ const Expositores: React.FC = () => {
         github: "#",
       },
     },
+    {
+      horaInicio: "16:30",
+      horaFin: "17:00",
+      nombre: "refrigerio ",
+      descripcion: "un sandwich de mosrtadel + soda",
+      imagen: "/src/assets/Armand.png", 
+      redes: {
+        facebook: "",
+        instagram: "",
+        linkedin: "",
+        github: "",
+      },
+    },
+    {
+      horaInicio: " 17:10",
+      horaFin: "17:40",
+      nombre: "Ing. Adriana Calvo",
+      descripcion: "................",
+      imagen: "/src/assets/Armand.png", 
+      redes: {
+        facebook: "#",
+        instagram: "#",
+        linkedin: "#",
+        github: "#",
+      },
+    },
+    
 
     {
       horaInicio:"17:50 ",
@@ -71,7 +85,7 @@ const Expositores: React.FC = () => {
       },
     },
 
-    // Puedes duplicar este objeto para más expositores
+
   ];
 
   return (
