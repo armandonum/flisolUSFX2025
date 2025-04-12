@@ -1,0 +1,13 @@
+.colaboradores-container {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.colaborador-card {
+ display: flex;
+flex-direction: row;
+ width: 300px;
+}
