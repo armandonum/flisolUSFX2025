@@ -10,6 +10,8 @@ import Fernanda from "../../assets/Fernanda.png";
 import Samuel from "../../assets/Samuel.png"; 
 import Max from "../../assets/Max.png"; 
 import Danner from "../../assets/Danner.png"; 
+import Shariel from "../../assets/Shariel.png";
+import Tatiana from "../../assets/Tatiana.png";
 
 const Organizadores = () => {
   const dragRef = useRef<HTMLDivElement>(null);
@@ -314,6 +316,38 @@ const Organizadores = () => {
               </div>
             </div>
           </div>
+
+
+          
+          <div className="card">
+            <img src={Shariel} alt="Sebastian" />
+            <div className="card-buttons">
+            Shariel
+            
+              <div className="social-icons">
+               
+              </div>
+            </div>
+          </div>
+
+
+          <div className="card">
+            <img src={Tatiana} alt="Sebastian" />
+            <div className="card-buttons">
+           Tatiana
+            
+              <div className="social-icons">
+              <a href="https://www.instagram.com/tatiana_murana?igsh=YXlwMTQ2dWpoNWFs" target="_blank" rel="noopener noreferrer" className="icon">
+                  <FaInstagram />
+                </a>               
+
+              </div>
+            </div>
+          </div>
+
+
+
+
           
         </div>
         <div id="ground"></div>

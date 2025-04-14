@@ -3,7 +3,9 @@ import React from "react";
 import ExpositorCard from "./expositorCard";
 import user from "../../assets/user.png";
 import refrigerio from "../../assets/refrigerio.png";
-
+import Ariel from "../../assets/expositores/Ariel_Guzman.png";
+import Roger from "../../assets/expositores/Roger.png";
+import Andrea from "../../assets/expositores/Andrea.png";
 const Expositores: React.FC = () => {
   const expositores = [
     {
@@ -11,7 +13,7 @@ const Expositores: React.FC = () => {
       horaFin: " 15:00",
       nombre: "Ing. Andrea Cornejo",
       descripcion: "¿Sigues usando Windows? Hablemos de Linux...",
-      imagen: user, 
+      imagen: Andrea, 
       redes: {
         
         instagram: "https://www.instagram.com/andreacoding/",
@@ -23,13 +25,13 @@ const Expositores: React.FC = () => {
       horaInicio: "15:10",
       horaFin: "15:40",
       nombre: "Ing. Roger David Barja Montellano",
-      descripcion: "......................",
-      imagen: user, 
+      descripcion: "software libre, distribuciones & comunidad",
+      imagen: Roger, 
       redes: {
-        facebook: "#",
-        instagram: "#",
-        linkedin: "#",
-        github: "#",
+        facebook: "",
+        instagram: "",
+        linkedin: "",
+        github: "",
       },
     },
     {
@@ -77,13 +79,13 @@ const Expositores: React.FC = () => {
       horaInicio:"17:50 ",
       horaFin: "17: 40",
       nombre: "Ing. Ariel Gusman Gonzales",
-      descripcion: "Flipper Zero: Hacking Ético con un Dispositivo Open Source",
-      imagen: user, 
+      descripcion: "Flipper Zero, El Tamagotchi Hacker que debes conocer",
+      imagen: Ariel, 
       redes: {
-        facebook: "#",
-        instagram: "#",
-        linkedin: "#",
-        github: "#",
+        facebook: "https://www.facebook.com/share/1DSc49F2zH/",
+        instagram: "https://www.instagram.com/1412rocker?igsh=dGdreWJwdGZ0djd4",
+        linkedin: "https://www.linkedin.com/in/ariel-esteban-guzman-gonzales-24655715b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        github: "",
       },
     },
 
