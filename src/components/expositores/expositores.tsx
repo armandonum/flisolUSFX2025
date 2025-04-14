@@ -6,6 +6,7 @@ import refrigerio from "../../assets/refrigerio.png";
 import Ariel from "../../assets/expositores/Ariel_Guzman.png";
 import Roger from "../../assets/expositores/Roger.png";
 import Andrea from "../../assets/expositores/Andrea.png";
+import Porcel from "../../assets/expositores/Porcel.png";
 const Expositores: React.FC = () => {
   const expositores = [
     {
@@ -25,11 +26,11 @@ const Expositores: React.FC = () => {
       horaInicio: "15:10",
       horaFin: "15:40",
       nombre: "Ing. Roger David Barja Montellano",
-      descripcion: "software libre, distribuciones & comunidad",
+      descripcion: "Comunidad de Software Libre - Distribuciones",
       imagen: Roger, 
       redes: {
         facebook: "",
-        instagram: "",
+        instagram: "https://www.instagram.com/rogerbarja/",
         linkedin: "",
         github: "",
       },
@@ -37,14 +38,14 @@ const Expositores: React.FC = () => {
     {
       horaInicio: "15:50",
       horaFin: "16:20",
-      nombre: "Ing. Juan Carlos Porcel",
-      descripcion: "................",
-      imagen: user, 
+      nombre: "Ing. Juan Carlos Porcel Aramayo",
+      descripcion: "El futuro de GNU, IA local en la terminal",
+      imagen: Porcel, 
       redes: {
-        facebook: "#",
-        instagram: "#",
-        linkedin: "#",
-        github: "#",
+        facebook: "",
+        instagram: "https://www.instagram.com/jcapax/",
+        linkedin: "",
+        github: "",
       },
     },
     {
