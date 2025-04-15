@@ -52,7 +52,7 @@ const Expositores: React.FC = () => {
       horaInicio: "16:30",
       horaFin: "17:00",
       nombre: "refrigerio ",
-      descripcion: "un sandwich de mortadela + soda",
+      descripcion: "",
       imagen: refrigerio, 
       redes: {
         facebook: "",
@@ -95,7 +95,7 @@ const Expositores: React.FC = () => {
 
   return (
     <section className="bg-black py-10 min-h-screen">
-      <h2 className="text-3xl text-white text-center font-bold mb-10">Expositores</h2>
+      <h2 className="text-3xl text-white text-center font-bold mb-10">Cronograma</h2>
       <div className="flex flex-col items-center gap-8">
         {expositores.map((expositor, idx) => (
           <ExpositorCard key={idx} {...expositor} />
