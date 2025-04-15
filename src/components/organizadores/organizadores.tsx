@@ -230,6 +230,10 @@ const Organizadores = () => {
                 <a href="https://www.facebook.com/share/12LwBkJmRM3/" target="_blank" rel="noopener noreferrer" className="icon">
                   <FaFacebookF />
                 </a>
+                <a href="https://github.com/SerVeloper" target="_blank" rel="noopener noreferrer" className="icon">
+                  <FaGithub />
+                </a>
+               
                
               </div>
             </div>
