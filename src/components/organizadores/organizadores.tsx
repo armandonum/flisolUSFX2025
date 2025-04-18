@@ -12,6 +12,7 @@ import Max from "../../assets/Max.png";
 import Danner from "../../assets/Danner.png"; 
 import Shariel from "../../assets/Shariel.png";
 import Tatiana from "../../assets/Tatiana.png";
+import Kunno from "../../assets/Kunno.png";
 
 const Organizadores = () => {
   const dragRef = useRef<HTMLDivElement>(null);
@@ -160,205 +161,154 @@ const Organizadores = () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
   }, []);
-
-  return (
-    <>
-    <h2>Organizadores</h2>
-
-    <div className="carruel">
-      <div id="drag" ref={dragRef}>
-        <div id="spin" ref={spinRef}>
-          <div>
-            <img src={tuxImage} alt="Tux" />
-          </div>
-
-          <div className="card">
-            <img src={Rocisela} alt="Rocisela Pinedo" />
-            <div className="card-buttons">
-              Rocisela Pinedo
-              <div className="social-icons">
-                <a href="https://www.facebook.com/share/1JovyHKpJC/" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaFacebookF />
-                </a>
+  
+    const organizadores = [
+      {
+        nombre: "Rocisela Pinedo",
+        imagen: Rocisela,
+        redes: [
+          { icono: <FaFacebookF />, url: "https://www.facebook.com/share/1JovyHKpJC/" }
+        ]
+      },
+      {
+        nombre: "Armando Nuñez",
+        imagen: Armando,
+        redes: [
+          { icono: <FaFacebookF />, url: "https://www.facebook.com/profile.php?id=100072802530579" },
+          { icono: <FaGithub />, url: "https://github.com/armandonum" },
+          { icono: <FaLinkedinIn />, url: "https://www.linkedin.com/in/armando-nu%C3%B1ez-condori-727487290" }
+        ]
+      },
+      {
+        nombre: "Juan Sebastian Delgadillo",
+        imagen: Sebastian,
+        redes: [
+          { icono: <FaFacebookF />, url: "https://www.facebook.com/share/15NnZ3jMJ5/" },
+          { icono: <FaGithub />, url: "https://github.com/sebastianDLL" },
+          { icono: <FaLinkedinIn />, url: "https://www.linkedin.com/in/delgadillo-llanos-juan-sebastian" },
+          { icono: <FaInstagram />, url: "https://www.instagram.com/sebastian_d_ll" }
+        ]
+      },
+      {
+        nombre: "Sergio Alejandro",
+        imagen: Sergio,
+        redes: [
+          { icono: <FaFacebookF />, url: "https://www.facebook.com/share/12LwBkJmRM3/" },
+          { icono: <FaGithub />, url: "https://github.com/SerVeloper" }
+        ]
+      },
+      {
+        nombre: "Fernanda Jeanette Flores",
+        imagen: Fernanda,
+        redes: [
+          { icono: <FaFacebookF />, url: "https://www.facebook.com/share/16KWjo6CkL/" },
+          { icono: <FaGithub />, url: "https://www.linkedin.com/in/fernanda-flores-gallo-775406269/" },
+          { icono: <FaLinkedinIn />, url: "https://www.linkedin.com/in/delgadillo-llanos-juan-sebastian" },
+          { icono: <FaInstagram />, url: "https://www.instagram.com/floresgallofernanda" }
+        ]
+      },
+      {
+        nombre: "Samuel Dayler Amonzabel",
+        imagen: Samuel,
+        redes: [
+          { icono: <FaGithub />, url: "https://github.com/zohan22/" },
+          { icono: <FaLinkedinIn />, url: "https://www.linkedin.com/in/samuel-amonzabel-b63748231/" },
+          { icono: <FaInstagram />, url: "https://www.instagram.com/zohanae77" }
+        ]
+      },
+      {
+        nombre: "Jhonny Ckunno",
+        imagen: Kunno,
+        redes: [
+          { icono: <FaFacebookF />, url: "https://www.facebook.com/share/1FU8EQAJ6E/" },
+          { icono: <FaLinkedinIn />, url: "http://www.linkedin.com/in/jhonny-ckuno-b799571ab" },
+          { icono: <FaInstagram />, url: "https://www.instagram.com/jhonnyckuno?igsh=MXMxdDllZ2o5N3kxMw==" }
+        ]
+      },
+      {
+        nombre: "Max Jherzon Rodas",
+        imagen: Max,
+        redes: [
+          { icono: <FaLinkedinIn />, url: "https://www.linkedin.com/in/max-jherzon-rodas-palacios-5b0948254" }
+        ]
+      },
+      {
+        nombre: "Aly Delgado Danner",
+        imagen: Danner,
+        redes: [
+          { 
+            icono: (
+              <svg 
+                width="50%" 
+                height="100%" 
+                viewBox="65 0 20 20" 
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ display: "block", maxWidth: "40px", maxHeight: "40px", margin: "auto" }} 
+              >
+                <path 
+                  d="M65.7852 5.33374H69.6615L66.9058 2.70668L68.4306 1.13901L71.0577 3.83956V0H73.3357V3.83956L75.9627 1.14513L77.4863 2.70668L74.7319 5.32762H78.607V7.49541H74.7098L77.4827 10.1898L75.9627 11.7208L72.1967 7.93631L68.4306 11.7208L66.9058 10.196L69.6798 7.50153H65.7852V5.33374ZM71.0515 10.6062H73.3296V15.7502H71.0515V10.6062Z" 
+                  fill="#1da1f2"
+                />
+              </svg>
+            ), 
+            url: "https://linktr.ee/aly_danner" 
+          }
+        ]
+      },
+      {
+        nombre: "Shariel",
+        imagen: Shariel,
+        redes: [
+          { icono: <FaLinkedinIn />, url: "https://www.linkedin.com/in/shariel-aylin-verduguez-choquevillca-a7a050361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }
+        ]
+      },
+      {
+        nombre: "Tatiana",
+        imagen: Tatiana,
+        redes: [
+          { icono: <FaInstagram />, url: "https://www.instagram.com/tatiana_murana" }
+         
+        ]
+      }
+    ];
+  
+    return (
+      <>
+        <h2>Organizadores</h2>
+        <div className="carruel">
+          <div id="drag" ref={dragRef}>
+            <div id="spin" ref={spinRef}>
+              <div>
+                <img src={tuxImage} alt="Tux" />
               </div>
+  
+              {organizadores.map((organizador, index) => (
+                <div className="card" key={index}>
+                  <img src={organizador.imagen} alt={organizador.nombre} />
+                  <div className="card-buttons">
+                    {organizador.nombre}
+                    <div className="social-icons">
+                      {organizador.redes.map((red, i) => (
+                        <a 
+                          href={red.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="icon" 
+                          key={i}
+                        >
+                          {red.icono}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
+            <div id="ground"></div>
           </div>
-
-          <div className="card">
-            <img src={Armando} alt="Armando Nuñez" />
-            <div className="card-buttons">
-              Armando Nuñez
-              <div className="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100072802530579" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaFacebookF />
-                </a>
-                <a href="https://github.com/armandonum" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaGithub />
-                </a>
-                <a href="https://www.linkedin.com/in/armando-nu%C3%B1ez-condori-727487290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaLinkedinIn />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <img src={Sebastian} alt="Sebastian" />
-            <div className="card-buttons">
-              Juan Sebastian Delgadillo 
-              <div className="social-icons">
-                <a href="https://www.facebook.com/share/15NnZ3jMJ5/" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaFacebookF />
-                </a>
-                <a href="https://github.com/sebastianDLL" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaGithub />
-                </a>
-                <a href="https://www.linkedin.com/in/delgadillo-llanos-juan-sebastian?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaLinkedinIn />
-                </a>
-                <a href="https://www.instagram.com/sebastian_d_ll?igsh=MWc5eWNnZGh3bHlwdQ==" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaInstagram />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <img src={Sergio} alt="Sebastian" />
-            <div className="card-buttons">
-            Sergio Alejandro
-              <div className="social-icons">
-                <a href="https://www.facebook.com/share/12LwBkJmRM3/" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaFacebookF />
-                </a>
-                <a href="https://github.com/SerVeloper" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaGithub />
-                </a>
-               
-               
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <img src={Fernanda} alt="Sebastian" />
-            <div className="card-buttons">
-            Fernanda Jeanette Flores
-              <div className="social-icons">
-                <a href="https://www.facebook.com/share/16KWjo6CkL/" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaFacebookF />
-                </a>
-                <a href="https://www.linkedin.com/in/fernanda-flores-gallo-775406269/" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaGithub />
-                </a>
-                <a href="https://www.linkedin.com/in/delgadillo-llanos-juan-sebastian?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaLinkedinIn />
-                </a>
-                <a href="https://www.instagram.com/floresgallofernanda?igsh=M2Z6MXA4OHdwd2V0" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaInstagram />
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="card">
-            <img src={Samuel} alt="Sebastian" />
-            <div className="card-buttons">
-            Samuel Dayler Amonzabel
-              <div className="social-icons">
-             
-                <a href="https://github.com/zohan22/" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaGithub />
-                </a>
-                <a href="https://www.linkedin.com/in/samuel-amonzabel-b63748231/" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaLinkedinIn />
-                </a>
-                <a href="https://www.instagram.com/zohanae77?igsh=c3MxMjF3bmwyc2c3" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaInstagram />
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div className="card">
-            <img src={Max} alt="Sebastian" />
-            <div className="card-buttons">
-            Max Jherzon Rodas 
-              <div className="social-icons">
-             
-                <a href="https://www.linkedin.com/in/max-jherzon-rodas-palacios-5b0948254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaLinkedinIn />
-                </a>
-             
-              </div>
-            </div>
-          </div>
-
-
-          <div className="card">
-            <img src={Danner} alt="Sebastian" />
-            <div className="card-buttons">
-            Aly Delgado Danner
-            
-              <div className="social-icons">
-                           <a href="https://linktr.ee/aly_danner" target="_blank" rel="noopener noreferrer" className="icon">
-                  <svg 
-                    width="50%" 
-                    height="100%" 
-                    viewBox="65 0 20 20" 
-                    xmlns="http://www.w3.org/2000/svg"
-                    style={{ display: "block", maxWidth: "40px", maxHeight: "40px", margin: "auto" }} 
-                  >
-                    <path 
-                      d="M65.7852 5.33374H69.6615L66.9058 2.70668L68.4306 1.13901L71.0577 3.83956V0H73.3357V3.83956L75.9627 1.14513L77.4863 2.70668L74.7319 5.32762H78.607V7.49541H74.7098L77.4827 10.1898L75.9627 11.7208L72.1967 7.93631L68.4306 11.7208L66.9058 10.196L69.6798 7.50153H65.7852V5.33374ZM71.0515 10.6062H73.3296V15.7502H71.0515V10.6062Z" 
-                      fill="#1da1f2"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-          
-          <div className="card">
-            <img src={Shariel} alt="Sebastian" />
-            <div className="card-buttons">
-            Shariel
-            
-              <div className="social-icons">
-               
-              </div>
-            </div>
-          </div>
-
-
-          <div className="card">
-            <img src={Tatiana} alt="Sebastian" />
-            <div className="card-buttons">
-           Tatiana
-            
-              <div className="social-icons">
-              <a href="https://www.instagram.com/tatiana_murana?igsh=YXlwMTQ2dWpoNWFs" target="_blank" rel="noopener noreferrer" className="icon">
-                  <FaInstagram />
-                </a>               
-
-              </div>
-            </div>
-          </div>
-
-
-
-
-          
         </div>
-        <div id="ground"></div>
-      </div>
-    </div>
-    </>
-  );
-};
+      </>
+    );
+  };
 
 export default Organizadores;

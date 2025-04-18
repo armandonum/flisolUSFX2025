@@ -34,15 +34,15 @@
   justify-content: space-between; 
   align-items: center; 
    box-shadow: 0px 4px 10px rgba(74, 0, 85, 1);
-  background-color: #0e0d0d;
+  background-color: #000000;
   border-radius: 12px;
   order: 100px solid #fff;
   overflow: hidden;
  
-  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0, 0, 0.9));
 }
 .card img {
-  filter: brightness(0.8); 
+  filter: brightness(0.8) contrast(1.2); 
   transition: filter 0.3s ease; 
 }
 
