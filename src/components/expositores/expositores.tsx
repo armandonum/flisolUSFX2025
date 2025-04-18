@@ -40,7 +40,7 @@ const Expositores: React.FC = () => {
       horaInicio:"12:00 ",
       horaFin: "13:45",
       nombre: "Ing. Ariel Gusman Gonzales",
-      descripcion: "écnicas avanzadas de Pentesting Web y Explotación de Vulnerabilidades",
+      descripcion: "Técnicas avanzadas de Pentesting Web y Explotación de Vulnerabilidades",
       imagen: Ariel, 
       redes: {
         facebook: "https://www.facebook.com/share/1DSc49F2zH/",
