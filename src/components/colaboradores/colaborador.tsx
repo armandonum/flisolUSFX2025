@@ -1,5 +1,10 @@
 import Card from "./componente_animado/SpotlightCard";
-const Colaborador = ({ nombre, foto }: { nombre: string; foto: string }) => {
+const Colaborador = (
+    { nombre, foto }: { 
+        nombre: string; 
+        foto: string;
+    onClick?: () => void; 
+ }) => {
     return (
 
         

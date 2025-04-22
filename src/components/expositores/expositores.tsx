@@ -8,6 +8,7 @@ import Andrea from "../../assets/expositores/Andrea.png";
 import Adriana from "../../assets/expositores/Adriana.png";
 import Porcel from "../../assets/expositores/Porcel.png";
 import instalacion from "../../assets/instalacion.png";
+import JorgeAyala from "../../assets/expositores/JorgeAyala.png";
 const Expositores: React.FC = () => {
   const expositores = [
     {
@@ -24,8 +25,8 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio: "11:00   ",
-      horaFin: " 11:45",
+      horaInicio: "10:00   ",
+      horaFin: " 10:50",
       nombre: "Ing. Andrea Cornejo",
       descripcion: "¿Sigues usando Windows? Hablemos de Linux...",
       imagen: Andrea, 
@@ -37,8 +38,8 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio:"12:00 ",
-      horaFin: "13:45",
+      horaInicio:"11:00 ",
+      horaFin: "11:50",
       nombre: "Ing. Ariel Gusman Gonzales",
       descripcion: "Técnicas avanzadas de Pentesting Web y Explotación de Vulnerabilidades",
       imagen: Ariel, 
@@ -47,6 +48,19 @@ const Expositores: React.FC = () => {
         instagram: "https://www.instagram.com/1412rocker?igsh=dGdreWJwdGZ0djd4",
         linkedin: "https://www.linkedin.com/in/ariel-esteban-guzman-gonzales-24655715b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         github: "",
+      },
+    },
+    {
+      horaInicio:"13:00 ",
+      horaFin: "14:00",
+      nombre: "Ing. Jorge Ayala Niño de Guzmán",
+      descripcion: "Tecnologías Libres en la Ingeniería del Agua y Ciencias de la Geo-información.",
+      imagen: JorgeAyala, 
+      redes: {
+        facebook: "https://www.facebook.com/sethians",
+        
+        linkedin: "https://www.linkedin.com/in/mscjorgeayala/",
+        youtube: "https://www.youtube.com/@UmaYakuYConsultoresSrl",
       },
     },
     {

@@ -1,6 +1,6 @@
 // src/components/expositores/ExpositorCard.tsx
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub, FaYoutube } from "react-icons/fa";
 import './expositorCard.css';
 
 interface ExpositorCardProps {
@@ -14,6 +14,7 @@ interface ExpositorCardProps {
     instagram?: string;
     linkedin?: string;
     github?: string;
+    youtube?: string;
   };
 }
 
@@ -36,6 +37,7 @@ const ExpositorCard: React.FC<ExpositorCardProps> = ({
           {redes.instagram && <a href={redes.instagram}><FaInstagram /></a>}
           {redes.linkedin && <a href={redes.linkedin}><FaLinkedinIn /></a>}
           {redes.github && <a href={redes.github}><FaGithub /></a>}
+          {redes.youtube && <a href={redes.youtube}><FaYoutube /></a>}
         </div>
       </div>
       <div className="imagen">
