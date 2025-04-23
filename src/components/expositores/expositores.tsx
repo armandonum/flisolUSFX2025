@@ -12,10 +12,10 @@ import JorgeAyala from "../../assets/expositores/JorgeAyala.png";
 const Expositores: React.FC = () => {
   const expositores = [
     {
-      horaInicio: "9:00   ",
-      horaFin: " 10:45",
-      nombre: "instalacion",
-      descripcion: "instalacion de software libre",
+      horaInicio: "9:00",
+      horaFin: "10:30",
+      nombre: "instalación",
+      descripcion: "instalación de software libre.",
       imagen: instalacion, 
       redes: {
         
@@ -25,8 +25,8 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio: "10:00   ",
-      horaFin: " 10:50",
+      horaInicio: "10:00",
+      horaFin: "10:50",
       nombre: "Ing. Andrea Cornejo",
       descripcion: "¿Sigues usando Windows? Hablemos de Linux...",
       imagen: Andrea, 
@@ -38,10 +38,10 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio:"11:00 ",
+      horaInicio:"11:00",
       horaFin: "11:50",
       nombre: "Ing. Ariel Gusman Gonzales",
-      descripcion: "Técnicas avanzadas de Pentesting Web y Explotación de Vulnerabilidades",
+      descripcion: "Hacking de Aplicaciones web con software libre.",
       imagen: Ariel, 
       redes: {
         facebook: "https://www.facebook.com/share/1DSc49F2zH/",
@@ -51,10 +51,10 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio:"13:00 ",
+      horaInicio:"13:00",
       horaFin: "14:00",
       nombre: "Ing. Jorge Ayala Niño de Guzmán",
-      descripcion: "Tecnologías Libres en la Ingeniería del Agua y Ciencias de la Geo-información.",
+      descripcion: "Tecnologías libres en la Ingeniería del Agua y Ciencias de la Geo-información.",
       imagen: JorgeAyala, 
       redes: {
         facebook: "https://www.facebook.com/sethians",
@@ -67,7 +67,7 @@ const Expositores: React.FC = () => {
       horaInicio: "14:00",
       horaFin: "14:45",
       nombre: "Ing. Roger David Barja Montellano",
-      descripcion: "Comunidad de Software Libre - Distribuciones",
+      descripcion: "Comunidad de software libre - Distribuciones.",
       imagen: Roger, 
       redes: {
         facebook: "",
@@ -80,7 +80,7 @@ const Expositores: React.FC = () => {
       horaInicio: "15:00",
       horaFin: "15:45",
       nombre: "Ing. Juan Carlos Porcel Aramayo",
-      descripcion: "El futuro de GNU, IA local en la terminal",
+      descripcion: "El futuro de GNU, IA local en la terminal.",
       imagen: Porcel, 
       redes: {
         facebook: "",
@@ -92,7 +92,7 @@ const Expositores: React.FC = () => {
     {
       horaInicio: "16:00",
       horaFin: "16:40",
-      nombre: "refrigerio ",
+      nombre: "refrigerio",
       descripcion: "",
       imagen: refrigerio, 
       redes: {
@@ -103,10 +103,10 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio: " 16:40",
+      horaInicio: "16:40",
       horaFin: "17:40",
       nombre: "Ing. Adriana Calvo",
-      descripcion: "Me cansé de la innovación ",
+      descripcion: "Me cansé de la innovación. ",
       imagen: Adriana, 
       redes: {
         facebook: "",
@@ -119,9 +119,9 @@ const Expositores: React.FC = () => {
 
     {
       horaInicio:"17:40 ",
-      horaFin: "18: 40",
+      horaFin: "18:40",
       nombre: "Ing. Ariel Gusman Gonzales",
-      descripcion: "Flipper Zero, El Tamagotchi Hacker que debes conocer",
+      descripcion: "Flipper Zero, el tamagotchi hacker que debes conocer.",
       imagen: Ariel, 
       redes: {
         facebook: "https://www.facebook.com/share/1DSc49F2zH/",
@@ -131,10 +131,10 @@ const Expositores: React.FC = () => {
       },
     },
     {
-      horaInicio: "19:00   ",
-      horaFin: " . . .",
-      nombre: "instalacion",
-      descripcion: "instalacion de software libre",
+      horaInicio: "19:00",
+      horaFin: "...",
+      nombre: "instalación",
+      descripcion: "instalación de software libre.",
       imagen: instalacion, 
       redes: {
         
