@@ -11,7 +11,7 @@ import Samuel from "../../assets/Samuel.png";
 import Max from "../../assets/Max.png"; 
 import Danner from "../../assets/Danner.png"; 
 import Shariel from "../../assets/Shariel.png";
-import Tatiana from "../../assets/Tatiana.png";
+import Tatiana from "../../assets/gpt/tatiana.png";
 import Kunno from "../../assets/Kunno.png";
 
 const Organizadores = () => {

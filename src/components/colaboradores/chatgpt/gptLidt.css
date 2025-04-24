@@ -1,0 +1,80 @@
+/* gptLidt.css */
+
+.trajeta-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  /* Cada tarjeta ocupa hasta el 100% en móvil, 45% en tablet y 22% en desktop */
+  .trajeta {
+    background-color: #111;
+    border: 1px solid #222;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .trajeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  .trajeta img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid #0ca7d6;
+  }
+  
+  .trajeta h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+  
+  /* Contenedor de iconos */
+  .informacion {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .informacion a {
+    color: #0ca7d6;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+  }
+  
+  .informacion a:hover {
+    color: #4dd0e1;
+  }
+  
+  /* Media Queries para responsividad */
+  
+  @media (min-width: 640px) {
+    /* tablets */
+    .trajeta {
+      width: calc(50% - 1.5rem);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* desktops */
+    .trajeta {
+      width: calc(25% - 1.5rem);
+    }
+  }
+  
