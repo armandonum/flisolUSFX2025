@@ -121,7 +121,7 @@ const Expositores: React.FC = () => {
     {
       horaInicio:"17:40 ",
       horaFin: "18:40",
-      nombre: "Ing. Ariel Gusman Gonzales",
+      nombre: "Ing. Ariel Guzman Gonzales",
       descripcion: "Flipper Zero, el tamagotchi hacker que debes conocer.",
       imagen: Ariel, 
       redes: {
